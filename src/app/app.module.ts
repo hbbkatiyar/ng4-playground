@@ -22,6 +22,7 @@ import { SortPipe } from './app.sort';
     imports: [
         BrowserModule,
         FormsModule,
+        ReactiveFormsModule,
         RouterModule.forRoot([
           {path: 'member', component: MembersComponent},
           {path: 'product', component: ProductComponent},

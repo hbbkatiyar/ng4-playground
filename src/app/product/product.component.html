@@ -1,16 +1,45 @@
 <p>
   product works!
 </p>
-<div>
-	<input type="text" name="firstname" placeholder="firstname">
+<form name="container" [formGroup]="form" (ngSubmit) ="onSubmit(form.value)">
+	<input type="text" name="firstname" placeholder="firstname" formControlName="firstname">
 	<br/>
-	<input type="text" name="lastname" placeholder="lastname">
+	<input type="text" name="lastname" placeholder="lastname" formControlName="lastname">
 	<br/>
-	<select name="languages">
+	<select name="languages" formControlName="languages">
+		<option value="TypeScript">TypeScript</option>
+		<option value="ReactJS">ReactJS</option>
+		<option value="AngularJS">AngularJS</option>
+	</select>
+	<br/>
+	<input type="text" name="decimal" placeholder="decimal" formControlName="decimal"
+		(ngModelChange) = "decimalChanged(oldValue, newValue = $event)" >
+	<br/>
+	<input type="text" name="binary" placeholder="binary" formControlName="binary"
+		(ngModelChange) = "binaryChanged(oldValue, newValue = $event)" >
+	<br/><br/>
+	<input type="text" name="octal" placeholder="octal" formControlName="octal"
+		(ngModelChange) = "octalChanged(oldValue, newValue = $event)" >
+	<br/><br/>
+	<input type="text" name="hexadecimal" placeholder="hexadecimal" formControlName="hexadecimal"
+		(ngModelChange) = "hexadecimalChanged(oldValue, newValue = $event)" >
+	<br/><br/>
+	<input type="submit" value="submit">
+</form>
+
+
+<!-- Template Driven Form: In this case we have to write most of the code in template file
+   -->
+<!-- <form name="container" #userForm="ngForm" (ngSubmit) ="onSubmit(userForm.value)">
+	<input type="text" name="firstname" placeholder="firstname" ngModel>
+	<br/>
+	<input type="text" name="lastname" placeholder="lastname" ngModel>
+	<br/>
+	<select name="languages" ngModel>
 		<option value="TypeScript">TypeScript</option>
 		<option value="ReactJS">ReactJS</option>
 		<option value="AngularJS">AngularJS</option>
 	</select>
 	<br/><br/>
 	<input type="submit" value="submit">
-</div>
+</form> -->
