@@ -1,0 +1,7 @@
+{
+	"status": "success",
+	"message": "List of movies",
+	"data": [
+		"Movie One", "Movie Two", "Movie Three", "Movie Four", "Movie Five"
+	]
+}

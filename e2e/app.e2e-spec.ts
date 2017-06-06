@@ -1,10 +1,10 @@
-import { Ng4PlaygroundPage } from './app.po';
+import { Angular4Page } from './app.po';
 
-describe('ng4-playground App', () => {
-  let page: Ng4PlaygroundPage;
+describe('angular4 App', () => {
+  let page: Angular4Page;
 
   beforeEach(() => {
-    page = new Ng4PlaygroundPage();
+    page = new Angular4Page();
   });
 
   it('should display welcome message', done => {

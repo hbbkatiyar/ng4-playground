@@ -1,6 +1,6 @@
 import { browser, by, element } from 'protractor';
 
-export class Ng4PlaygroundPage {
+export class Angular4Page {
   navigateTo() {
     return browser.get('/');
   }
