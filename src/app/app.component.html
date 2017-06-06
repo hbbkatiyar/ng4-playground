@@ -1,17 +1,21 @@
-<h1>
-    Welcome to {{title}}!!
-</h1>
-
-<ul>
-	<li>
-		<a routerLink="member">Member</a>
-	</li>
-	<li>
-		<a routerLink="product">Product</a>
-	</li>
-	<li>
-		<a routerLink="movie">Movie</a>
-	</li>
-</ul>
-<br/>
-<router-outlet></router-outlet>
+<div class="container">
+	<h1>
+	    {{title}}
+	</h1>
+	
+	<ul>
+		<li>
+			<a routerLink="member">Member</a>
+		</li>
+		<li>
+			<a routerLink="product">Product</a>
+		</li>
+		<li>
+			<a routerLink="movie">Movie</a>
+		</li>
+	</ul>
+	<br/>
+	<router-outlet></router-outlet>
+	
+	<pre>{{arr | sort: 'descending'}}</pre>
+</div>

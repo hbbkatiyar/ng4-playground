@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Angular works!';
+  title = 'Welcome to Angular 4';
+  arr = [3, 7, 8, 2, 1];
 }

@@ -11,5 +11,11 @@ export class ProductComponent implements OnInit {
 
   ngOnInit() {
   }
+  
+  //Template Driven Form
+  // In this case we have to write most of the code in template file
+  
+  //Model Driven Form
+  // In this case we have to write most of the code in component file
 
 }
